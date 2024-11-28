@@ -28,10 +28,10 @@
                             {{ $service['title'] }}
                         </h3>
                         @if(!empty($service['features']))
-                        <ul class="text-gray-600 list-disc pl-5">
+                        <ul class="text-[#353844] list-disc pl-5">
                             @foreach($service['features'] as $feature)
                             
-                            <li class="text-[#D2AD81]">
+                            <li class="font-nunito font-semibold text-[14px] text-[#D2AD81]">
                                 <div class="text-[#353844]">
                                     {{ $feature }}
                                 </div>
@@ -39,7 +39,7 @@
                             @endforeach
                         </ul>
                         @endif
-                        <p class="mt-4 text-gray-600">{{ $service['description'] }}</p>
+                        <p class="mt-4 text-[#353844] font-nunito">{{ $service['description'] }}</p>
                     </div>
                 </div>
                 @endforeach
